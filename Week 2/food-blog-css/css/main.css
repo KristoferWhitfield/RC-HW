@@ -1,0 +1,141 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+  Font-size: 1em;
+  list-style: none;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+body {
+  margin-left: 4rem;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+h1 a {
+  color: red;
+  font-size: 5rem;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+header h2 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+/* fix left link */
+nav a {
+  color: #cce0d2;
+  font-size: 2rem;
+  font-weight: normal;
+  padding-left: 1rem;
+}
+
+article h3 {
+  color: #cce0d2;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+article h2 a{
+  color: black;
+  font-size: 3rem;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+body > article > h3 + h2 + section {
+  height: 20rem;
+  background-image: url(../img/nyc2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* *************************** */
+/* first new york and paris picture positioning */
+body > article > section + section {
+  height: 20rem;
+}
+
+body > article > section + section > span {
+  color: #cce0d2;
+  font-size: 10rem;
+  font-weight: normal;
+  height: 10rem;
+  float: left;
+  clear: both;
+}
+
+body > article > section + section > p {
+  color: black;
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+
+/* ********************************** */
+
+article > h4 > a {
+  color: red;
+  margin-top: 1.7rem;
+  font-size: 1.9rem;
+  text-decoration: none;
+  margin-left: 70rem;
+}
+
+article {
+  border-bottom: solid .2rem #cce0d2;
+}
+
+body > article + article > h3 + h2 + section {
+  height: 20rem;
+  background-image: url(../img/paris.jpg);
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+footer > nav {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+footer > nav > a {
+  color: red;
+  padding-right: 1rem;
+  text-decoration: none;
+}
+
+footer > nav > span {
+  font-size: 1.9rem;
+  color: #cce0d2;
+}
+
+footer > p {
+  font-size: 1.2rem;
+}
+
+
+
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
