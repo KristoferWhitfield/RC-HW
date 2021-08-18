@@ -46,7 +46,7 @@ nav a {
   color: #cce0d2;
   font-size: 2rem;
   font-weight: normal;
-  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 article h3 {
@@ -80,6 +80,7 @@ body > article > section + section > span {
   font-size: 10rem;
   font-weight: normal;
   height: 10rem;
+  margin-right: 2rem;
   float: left;
   clear: both;
 }
