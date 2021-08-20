@@ -1,0 +1,145 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.green {
+  height: 100px;
+  background-color: #2E7061;
+}
+
+.green > section > span, .green > section > h2, .green > section > i {
+  color: white;
+}
+
+.green > section {
+  border-right: 3px white solid;
+}
+
+/* **************
+evil nav background
+************** */
+nav{
+  border-bottom: 1px black solid;
+  height: 50px;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  float: left;
+  margin-left: 10px;
+}
+
+nav > ul {
+  list-style: none;
+}
+
+/* ****************************** */
+
+h1 {
+  font-weight: bold;
+  font-size: 90px;
+  text-align: center;
+}
+
+.dabois {
+  height: 350px;
+}
+
+.dabois > img:first-child {
+  margin-left: 330px;
+}
+
+.duck > section {
+  border-top: 3px solid #2E7061;
+  margin-left: 20px;
+  margin-top: 15px;
+  float: left;
+  width: 23%;
+}
+
+.goose > section {
+  border-top: 3px solid #2E7061;
+  margin-left: 20px;
+  margin-top: 15px;
+  float: left;
+  width: 23%;
+}
+
+.duck > section > img {
+  margin-top: 20px;
+}
+
+.goose > section > img {
+  margin-top: 20px;
+}
+
+.duck > section > h3 {
+  font-size: 15px;
+}
+
+.goose > section > h3 {
+  font-size: 15px;
+}
+
+footer {
+  background-color: black;
+  height: 200px;
+  clear: both;
+}
+
+footer > section > ul > li > a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
+
+footer > section > ul > li{
+    list-style: none;
+    float: left;
+    width: 7%;
+}
+
+footer > section > span {
+  color: white;
+  font-size: 15px;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

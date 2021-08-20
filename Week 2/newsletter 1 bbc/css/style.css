@@ -1,0 +1,177 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* ******************************
+/* nav bar of pain */
+/* ************************** */
+header {
+  height: 100px;
+  background-color: black;
+}
+
+h1 {
+  color: black;
+  background-color: white;
+  width: 5%;
+  float: left;
+}
+
+nav {
+  background: black;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+/* **************************** */
+/* fix gap */
+.toppage {
+  height: 600px;
+  background-color: #E7E8E1;
+  clear: both;
+}
+
+/* fix positioning */
+.named h2, .named span {
+  font-size: 25px;
+  height: 30px;
+}
+
+.named {
+  clear: both;
+}
+
+.named span {
+  float: right;
+}
+
+/* .named h2 {
+  float: left;
+} */
+
+/* fix positioning */
+/* .articlesbig, .articlessmall {
+  clear: both;
+} */
+
+ /* ******************************
+ news part
+ ****************************** */
+
+.news {
+  height: 600px;
+  clear: both;
+}
+.news span {
+  color: red;
+  font-size: 30px;
+  float: left;
+  margin-left: 20px;
+}
+
+.news h2 {
+  font-size: 30px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.news > img {
+  margin-left: 20px;
+}
+/* ********************
+big box boi
+********************** */
+.named, .articlesbig {
+  margin-left: 20px;
+}
+
+.articlesbig {
+  height: 500px;
+  width: 50%;
+  background-image: url(../img/trumpp.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  float: left;
+}
+
+.articlessmall {
+  height: 150px;
+  width: 20%;
+  float: left;
+}
+
+.articlesbig > h2, .articlesbig > span, .articlesbig > p, .articlessmall > h2, .articlessmall > span {
+  color: white;
+}
+
+#cat {
+  background-image: url(../img/tandp.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#dog {
+  background-image: url(../img/cath.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#fish {
+  background-image: url(../img/fist.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#horse {
+  background-image: url(../img/office.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

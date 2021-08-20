@@ -1,0 +1,134 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+.main {
+  width: 65%;
+}
+
+.big {
+  width: 100%;
+  height: 400px;
+  background-image: url(../img/trump.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.big > h2, .big > span {
+  color: white;
+  text-align: left;
+  /* width: 30%; */
+  padding-top: 60px;
+}
+
+.big > p {
+  color: yellow;
+  text-align: left;
+  /* width: 30%; */
+}
+
+.big > section {
+  float: right;
+  width: 30%;
+}
+
+.big > section > h2, .big > section > h3 {
+  text-align: left;
+  color: white;
+}
+
+.articles {
+  width: 65%;
+  height: 400px;
+}
+
+.articles > section:first-child {
+  width: 30%;
+  height: 300px;
+  border: 1px solid black;
+  float: left;
+
+}
+
+/* stack boxes */
+
+.articles > section + section, .articles > section + section + section {
+    border: 1px solid black;
+    width: 30%;
+}
+
+.articles > section + section {
+    float: right;
+}
+
+.articles > section + section + section {
+    float: right;
+    background-color: #660033;
+}
+
+.plus {
+  border: 1px grey solid;
+  width: 65%;
+}
+
+footer {
+  background-color: black;
+}
+
+footer > span {
+  color: white;
+}
+
+footer > span > a {
+  color: yellow;
+}
+/* ********************* */
+/* put into topright corner */
+.spread {
+  width: 35%;
+  float: right;
+
+}
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

@@ -1,0 +1,109 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+header {
+  background-color: black;
+  height: 100px;
+}
+
+/* fix gap nav */
+nav > li {
+  list-style: none;
+}
+
+nav > li > a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 20px;
+  float: left;
+}
+
+nav > li > i {
+  color: white;
+}
+
+/* fix positioning */
+.office {
+  height: 700px;
+  width: 100%;
+  background-image: url(../img/bigimage.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.office > section {
+  width: 50%;
+  background-color: #F8FBFF;
+  opacity: .5;
+  height: 100px;
+}
+
+.office > section > h2 {
+  text-align: center;
+  font-size: 35px;
+}
+
+body > header + section + section {
+  margin-top: 40px;
+  margin-left: 400px;
+  border-bottom: 1px solid black;
+  height: 300px;
+}
+
+body > header + section + section > img {
+  float: left;
+}
+
+body > header + section + section > h2 {
+  font-size: 20px;
+}
+
+body > header + section + section > img + h2 + span {
+  color: blue;
+}
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

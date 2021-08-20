@@ -1,0 +1,162 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+nav {
+  height: 50px;
+  background-color: black;
+}
+
+nav > ul > li > a, nav > a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+nav > a {
+  float: left;
+  margin-right: 40px;
+}
+
+nav > ul > li {
+    list-style: none;
+    float: left;
+    margin-right: 20px;
+}
+
+h1 {
+  border-bottom: red 3px solid;
+}
+
+.big {
+  width: 65%;
+}
+
+.bigl {
+  width: 60%;
+  float: left;
+}
+
+.bigl > section:first-child {
+  width: 100%;
+}
+
+.bigl > section + section {
+  width: 50%;
+  float: left;
+}
+
+.bigl > section + section + section {
+  width: 50%;
+}
+
+.bigs {
+  width: 40%;
+  float: left;
+}
+
+.bigs > section > a, .bigs > a {
+  color: #C23B18;
+  text-decoration: none;
+}
+
+.side {
+  width: 35%;
+  float: left;
+}
+
+.side > h2 {
+  font-weight: bold;
+  border-bottom: 3px solid red;
+}
+
+.side > section > a {
+  color: #C23B18;
+  text-decoration: none;
+}
+
+.side > section > p {
+  font-size: 17px;
+  border-bottom: 1px solid grey;
+}
+
+.ford {
+  margin-top: 20px;
+}
+
+.ford > h2 > a {
+  color: #C23B18;
+  text-decoration: none;
+}
+
+.ford > section > h3 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.truck {
+  width: 40%;
+  float: left;
+}
+
+.text {
+  width: 60%;
+  float: left;
+}
+
+.text > section > h4 {
+  font-size: 20px;
+  border-bottom: 1px grey solid;
+}
+
+footer {
+  border-top: 2px solid gray;
+  clear: both;
+}
+
+footer > a > i {
+  color: #C23B18;
+  font-size: 50px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

@@ -1,0 +1,101 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  background-color: #1877F2;
+  height: 100px;
+}
+
+header > h2 {
+  color: white;
+  font-size: 25px;
+}
+
+header > h2, header > form, header > button {
+  float: left;
+  margin-right: 15px;
+}
+
+.left, .right {
+  width: 50%;
+  float: left;
+}
+
+.left > h1 {
+  font-size: 40px;
+}
+
+.left > p {
+  font-size: 30px;
+}
+
+.left > p > i {
+  color: #ADB9D3;
+  margin-right: 10px;
+}
+
+.right > h2 {
+  font-size: 30px;
+}
+
+.right > section > form {
+  float: left;
+  width: 33.33%;
+  height: 30px;
+
+}
+
+.clear {
+  clear: both;
+}
+
+.align {
+  text-align: center;
+}
+
+.right > button {
+  background-color: green;
+  color: white;
+  margin-left: 295px;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
