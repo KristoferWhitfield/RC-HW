@@ -1,0 +1,173 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+  Font-size: 1em;
+  list-style: none;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header, footer {
+  border: 3px black solid;
+  height: 200px;
+  width: 100%;
+  clear: both;
+}
+
+header > nav section {
+  height: 100px;
+  width: 15%;
+  float: left;
+  border: 1.2px black solid;
+  background: blue;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.block {
+  border: 3px black solid;
+  background-color: green;
+  height: 200px;
+  width: 70%;
+  float: left;
+}
+
+.block + section {
+  width: 30%;
+  float: left;
+}
+
+body > section {
+  border: 3px black solid;
+  height: 200px;
+  background-color: green;
+  width: 33.33%;
+  float: left;
+}
+
+footer > nav section {
+  height: 100px;
+  width: 15%;
+  float: left;
+  border: 1.2px black solid;
+  background: blue;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+/* phone */
+@media (min-width: 320px) and (max-width: 480px){
+  nav > section + section + section + section {
+      display: none;
+  }
+
+  nav > section + section, nav > section:first-child {
+    margin-left: 10px;
+    margin-top: 40px;
+    width: 29%;
+  }
+
+  .block, .block + section, body > section{
+    height: 150px;
+    width: 100%;
+  }
+
+
+
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1024px){
+  header, footer {
+    height: 300px;
+  }
+
+  nav > section {
+      height: 200px;
+  }
+
+  nav > section + section + section + section {
+    margin-left: 110px;
+  }
+
+  nav > section + section, nav > section:first-child {
+    margin-left: 25px;
+    margin-top: 40px;
+    width: 29%;
+  }
+
+  .block, .block + section, body > section{
+    height: 300px;
+  }
+}
+
+/* smartwatch */
+@media (max-device-width: 218px) and (max-device-height: 281px){
+
+    header, footer {
+      height: 80px;
+    }
+
+    header > nav section {
+      width: 29%;
+      margin-top: 8px;
+      margin-left: 7px;
+      height: 60px;
+    }
+
+    footer > nav section {
+      width: 29%;
+      margin-top: 8px;
+      margin-left: 7px;
+      height: 60px;
+    }
+
+    .block {
+      height: 100px;
+      width: 100%;
+    }
+
+
+    nav > section + section + section + section, body > section + section {
+      display: none;
+    }
+
+  }
+}

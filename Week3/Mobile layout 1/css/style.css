@@ -1,0 +1,156 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+  list-style: none;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header, footer {
+  border: 3px black solid;
+  height: 200px;
+  width: 100%;
+  clear: both;
+}
+
+header > nav section {
+  height: 100px;
+  width: 15%;
+  float: left;
+  border: 1.2px black solid;
+  background: blue;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.lonley {
+  border: 3px black solid;
+  background-color: green;
+  height: 200px;
+  width: 100%;
+  float: left;
+}
+
+body > section {
+  border: 3px black solid;
+  height: 200px;
+  background-color: green;
+  width: 33.33%;
+  float: left;
+}
+
+
+
+
+
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+/* phone */
+@media (min-width: 320px) and (max-width: 480px) {
+  nav > section + section + section + section {
+      display: none;
+  }
+
+  body > section {
+    width: 100%;
+  }
+
+  header {
+    height: 100px;
+  }
+
+  footer {
+    height: 100px;
+  }
+
+  header > nav section {
+    width: 31%;
+    margin-top: 8px;
+    height: 80px;
+    margin-left: 5px;
+  }
+}
+
+
+/* tablet */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  header {
+    height: 250px;
+  }
+
+  header > nav section {
+    height: 200px;
+  }
+
+  body > section {
+    height: 350px;
+  }
+
+  .lonley {
+    height: 400px;
+  }
+
+  footer {
+    height: 250px;
+  }
+}
+
+
+/* smartwatch */
+
+@media (max-device-width: 218px) and (max-device-height: 281px){
+
+  header {
+    height: 100px;
+  }
+
+  header > nav section {
+    width: 29%;
+    margin-top: 8px;
+    margin-left: 7px;
+    height: 70px;
+  }
+
+  .lonley {
+    height: 150px;
+    margin-top: 20px;
+  }
+
+
+  footer, nav > section + section + section + section, body > section + section {
+    display: none;
+  }
+
+}
