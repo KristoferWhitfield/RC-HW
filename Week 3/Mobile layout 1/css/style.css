@@ -77,7 +77,7 @@ body > section {
 /* ADDITIONAL STYLES
 /*******************************************/
 /* phone */
-@media (min-width: 320px) and (max-width: 480px) {
+@media screen and (max-width: 480px) {
   nav > section + section + section + section {
       display: none;
   }
@@ -105,7 +105,7 @@ body > section {
 
 /* tablet */
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 481px) and (max-width: 1024px) {
   header {
     height: 250px;
   }
