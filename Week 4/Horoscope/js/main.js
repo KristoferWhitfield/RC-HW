@@ -1,17 +1,32 @@
-document.querySelector('#convert').addEventListener('click', change)
+document.querySelector('#enlight').addEventListener('click', horoscopeReading)
 
-function change() {
+function horoscopeReading() {
+  const month = document.querySelector('#month').value.toLowerCase()
+  const day = document.querySelector('#day').value
 
-  const far = document.querySelector('#fah').value.toLowerCase()
-
-
-  if (far === "may"){
-
-  document.querySelector('#temp').innerText = "dog"
-
-} else if (far === "january") {
-  document.querySelector('#temp').innerText = "cat"
-}
-
-
+  if (month === "march" && day >= 21 || month === "april" && day <= 19){
+    document.querySelector('#reading').innerText = "Aries 2021 is major for your love life Aries, but only if you drop the drama. As the world starts to heal from the pains of 2020, you need to let go of any habits that may have developed while isolating that no longer serve you. This year brings opportunities for magnificent love, as long as you don't ruin it with an infamous Aries temper tantrum."
+  }else if (month === "april" && day >= 20 || month === "may" && day <= 20){
+    document.querySelector('#reading').innerText = "Taurus Last year left you with plenty of time to think, Taurus, and 2021 wants you to act on your desires because you are worth it. This will likely manifest most obviously in your professional life, so don't be surprised if you leave one job for something bigger and better that fills your soul. Practice self-care and don't for a second forget your worth, or else you could risk missing out on an opportunity made for you."
+  }else if (month === "may" && day >= 21 || month === "june" && day <= 20){
+    document.querySelector('#reading').innerText = "Gemini After the economic chaos of 2020, this year offers you opportunities to rebuild and grow professionally, but it won't be easy for you or anyone else, Gemini. The hard work and effort you put in last year will start to pay off, but you'll need to keep up some of the momentum. An eclipse in your sign brings a burst of unexpected news, further encouraging your personal growth that the new year brings."
+  }else if (month === "june" && day >= 21 || month === "july" && day <= 22){
+    document.querySelector('#reading').innerText = "Cancer 2020 kept you so busy that you started crab-walking in circles, Cancer. You're an expert when it comes to taking care of other people, but 2021 asks you to let other people take care of you. This may be hard to do, as it can be difficult to admit when you're vulnerable, but I pinkie promise that it's for your own health and happiness. "
+  }else if (month === "july" && day >= 23 || month === "august" && day <= 22){
+    document.querySelector('#reading').innerText = "Leo You are ruled by the sun, Leo, so you were actually born to be in the spotlight. Social distancing was hard for everyone, but it's possible it affected your sign the most, leaving you to get creative. As the world starts to heal in 2021, you'll feel like a lion trapped in a cage bursting to get out. When you do, you'll want to say yes to every date and every opportunity, but beware of short-term thinking, Leo. Your 2021 mission is to practice patience and be discerning."
+  }else if (month === "august" && day >= 23 || month === "september" && day <= 22){
+    document.querySelector('#reading').innerText = "Virgo As the healer of the zodiac, 2020 kept you busy, Virgo. When you weren't out there giving out masks and delivering meals you became an emotional net for friends and family, and it's likely you over-extended yourself. This year, it may be helpful to work through the trauma you've experienced, either by getting a therapist, meditating, or simply making more time for long walks. Doing things that make you feel calm and balanced may just help you erect boundaries to bring in healthier relationships."
+  }else if (month === "september" && day >= 23 || month === "october" && day <= 22){
+    document.querySelector('#reading').innerText = "Libra As the sign of partnerships and balance, 2020 did a number on you. Not only was the world total chaos, but you had to primarily switch to flirting via sext, which while fun, is not the same as batting your eyelashes in real life. However, you still managed to get your fair share of attention. This year offers a chance at healthy, stable, and long-term love, you just need to keep your eyes and heart open."
+  }else if (month === "october" && day >= 23 || month === "november" && day <= 21){
+    document.querySelector('#reading').innerText = "Scorpio The pains of 2020 may have brought out your dark side, Scorpio. That doesn't make you a supervillain but it does mean that you may have raised your stinger a few times to pick fights with those closest to you. But that's okay; if the last year has taught us anything, it's that life can be hard, and we all deserve a little more grace. Now that you know how you react in some situations, do what you can to stop giving in to any overly aggressive tendencies. Your friendships will benefit from keeping a cooler head."
+  }else if (month === "november" && day >= 22 || month === "december" && day <= 21){
+    document.querySelector('#reading').innerText = "Sagittarius Last year was rough on everyone, Sagittarius, but you felt it super hard. As a fire sign who loves to be the life of the party, when parties were canceled, you may have wondered what the point of it all was — and given into doom-scrolling as a substitute. This year, you'll find purpose again. 2021 asks you to prioritize your health, both mental and emotional. You'll feel much better when you start listening and tending to your needs. "
+  }else if (month === "december" && day >= 22 || month === "january" && day <= 19){
+    document.querySelector('#reading').innerText = "Capricorn Hello, dear Capricorn. Pay attention, because you're going to like what you read. After the hellscape that was 2020, this year puts your career and money center stage. In particular, you will benefit from leaning into what you love and whatever it is that brings you the most satisfaction. While we all must take what we can get in this economy, this year asks you to take risks and reap the financial rewards."
+  }else if (month === "january" && day >= 20 || month === "february" && day <= 18){
+    document.querySelector('#reading').innerText = "Aquarius You care about your community, Aquarius, and the events of 2020 gave you plenty of chances to keep busy by lending a hand. Whether you became your family's point person and organizer of Zoom holidays or dove into activism, you likely stayed so busy tending to others that you forgot about your own needs. Now, 2021 shines a spotlight on you, precious water bearer, and it's time to step into it."
+  }else if (month === "february" && day >= 19 || month === "march" && day <= 20){
+    document.querySelector('#reading').innerText = "Pisces Your psychic and empathic abilities are what make you so magical, Pisces, but the weight of the world in 2020 became too much for you. As a result, you probably used stay-at-home orders to retreat a little bit too much. This year asks you to come out of your fishbowl and grace us with your humor and pretty face. Expect major changes in your friend group that overlap with your love life. Are you secretly in love with your best friend?"
+  }
 }

@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-    	<meta charset="utf-8">
-    	<meta name="description" content="This is where your description goes">
-    	<meta name="keywords" content="one, two, three">
+    <meta charset="utf-8">
+    <meta name="description" content="This is where your description goes">
+    <meta name="keywords" content="one, two, three">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100&display=swap" rel="stylesheet">
 
-		<title>Temperature Converter</title>
+		<title>Horoscope</title>
 
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/normalize.css">
@@ -13,16 +16,18 @@
 	</head>
 	<body>
 
-		<h1>Temperature Converter</h1>
+		<h1>Horoscope</h1>
+
+		<p id="reading"></p>
 
 		<form>
-			<label for="degrees"> Degrees in Fahrenheit </label>
-			<input id="fah" type="text" placeholder="Fahrenheit ">
+			<input id="day" type="number" placeholder="Enter Day ">
+			<input id="month" type="text" placeholder="Enter Month ">
 		</form>
 
-		<button id="convert" type="button" name="button">Convert</button>
+		<button id="enlight" type="button" name="button">Submit</button>
 
-		<h2 id="temp"></h2>
+
 
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
