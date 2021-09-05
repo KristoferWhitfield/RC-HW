@@ -1,4 +1,4 @@
-document.querySelector('#enlight').addEventListener('click', horoscopeReading)
+document.querySelector('#enlight').addEventListener('click', horoscopeReading);
 
 function horoscopeReading() {
   const month = document.querySelector('#month').value.toLowerCase()

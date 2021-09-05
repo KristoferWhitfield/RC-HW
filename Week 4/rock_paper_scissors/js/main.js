@@ -3,9 +3,9 @@ var botScore=0,
 
 
 
-document.getElementById("rock").onclick = playerThrowsRock();
-document.getElementById("paper").onclick = playerThrowsPaper();
-document.getElementById("scissors").onclick = playerThrowsScissors();
+document.getElementById("rock").onclick = playerThrowsRock;
+document.getElementById("paper").onclick = playerThrowsPaper;
+document.getElementById("scissors").onclick = playerThrowsScissors;
 
 
 function playerThrowsRock(){
@@ -15,7 +15,7 @@ function playerThrowsRock(){
 
 function playerThrowsScissors(){
 	var botsWeapon= getRandomWeapon();
-	checkWhoWon(botsWeapon, "scisors");
+	checkWhoWon(botsWeapon, "scissors");
 }
 
 function playerThrowsPaper(){
