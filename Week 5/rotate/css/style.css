@@ -48,6 +48,20 @@ body {
 /******************************************
 /* LAYOUT
 /*******************************************/
+div {
+  border: 3px solid black;
+  height: 200px;
+  width: 30%;
+  margin-bottom: 70px;
+  margin-top: 150px;
+  margin-left: 150px;
+  background-color: red;
+}
+
+.backgroundHidden {
+  background-color: white;
+}
+
 
 
 /******************************************
