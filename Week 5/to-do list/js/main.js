@@ -12,12 +12,16 @@ document.querySelector('#listHere').addEventListener('click', (items) =>{
 document.querySelector('#clearCompleted').addEventListener('click', ()=> {
 
 let itemline = document.getElementsByClassName('lineThrough')
+let completedItems = itemline.length
 while(itemline.length > 0){
   itemline[0].parentNode.removeChild(itemline[0])
+
 }
 
+counter -= completedItems
+document.querySelector('#counters').innerText = counter
   // fix counter
- document.querySelector('#counters').innerText = counter + document.querySelector('li').length
+ // document.querySelector('#counters').innerText = counter - aub
 })
 
 
