@@ -98,13 +98,12 @@ class Player{
     function reset(){
       game.reset()
       document.querySelectorAll('.square').forEach(function(square){
-        box.innerHTML = ""
+        square.innerHTML = ""
         document.querySelector('#result').innerHTML = ""
         document.querySelector('#player').innerHTML = "X"
-        document.querySelector('.game').style.background = 'red'
         Array.from(document.querySelectorAll('.square'))
         array.forEach((box) => {
-        box.addEventListener('click', startGame)})
+        square.addEventListener('click', startGame)})
       })
     }
 document.querySelector('#reset').addEventListener('click', reset)
